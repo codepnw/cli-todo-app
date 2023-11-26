@@ -12,6 +12,19 @@ import (
 	"github.com/codepnw/cli-todo/internal/todo"
 )
 
+/*
+	Example command
+	- go run cmd/main.go -add adding another todo
+	- go run cmd/main.go -list 
+	- go run cmd/main.go -complete=1
+	- go run cmd/main.go -del=1
+
+	Build
+	- go build -o todo cmd/main.go
+	- ./todo -list
+	- echo "sending data from another program" | ./todo -add
+*/
+
 const (
 	todoFile = ".todos.json"
 )
